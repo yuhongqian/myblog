@@ -141,18 +141,34 @@ input[type=submit] {
     background-size: cover;
 }
 
-#content .home_title{
-
-    text-align: center;
-}
-
-#content .home_title h1{
+#content .home_text{
 
     /* put the text in the center of the page */
-    top: 50%;
-    text-align: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+#content .home_text{
+
+    height: 100%;
+
+    /* put the text in the center of the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     /* style the text */
     color: white;
 }
+
+#content .myname{
+    font-size: 40px;
+}
+
+#socrates{
+    text-align: right;
+ }
+
 
