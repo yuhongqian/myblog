@@ -6,11 +6,18 @@
   <link href="{% static "css/blog.css" %}" rel="stylesheet">
 {% endblock %}
 
-{% block title %}My Blog{% endblock %}
+{% block title %}HongChien Yu | Blog{% endblock %}
 
 {% block content %}
-  <h1>My Blog</h1>
 
+  <div class="sticknav">
+    <a href="#home">home</a>
+    <a class="active" href="{% url "blog:post_list" %}">blog</a>
+    <a href="#contact">contact</a>
+    <a href="#about">about</a>
+  </div>
+
+  <div class = "postlist">
   {% if tag %}
 	<h2>Posts tagged with "{{ tag.name }}"</h2>
   {% endif %}
@@ -38,4 +45,6 @@
     {{ post.body|truncatewords:30|linebreaks }}
   {% endfor %}
   {% include "pagination.html" with page=posts %}
+
+  </div>
 {% endblock %}
