@@ -130,7 +130,7 @@ input[type=submit] {
 
 #content .bg{
 
-    background-image: url("../images/homebg.jpg");
+    background-image: url("../images/bg.jpg");
 
     /* full height */
     height: 100%;
@@ -170,5 +170,18 @@ input[type=submit] {
 #socrates{
     text-align: right;
  }
+
+#content .intro{
+    height: 100%;
+
+    /* put the text in the center of the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content .intro_0{
+    width: 50%;
+}
 
 
