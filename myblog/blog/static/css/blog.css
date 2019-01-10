@@ -1,11 +1,5 @@
-html {
-    height: 100%;
-}
-
 body {
-    height: 100%;
-    margin:0;
-    padding:0;
+
     font-family:helvetica, sans-serif;
 }
 
@@ -23,15 +17,6 @@ h2 {
 
 
 
-
-
-#sidebar {
-    float:right;
-    width:30%;
-    padding:10px;
-    background:#efefef;
-    height:100%;
-}
 
 p.date {
     color:#ccc;
@@ -95,6 +80,8 @@ input[type=submit] {
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
+  display: flex;
+  justify-content: space-around;
   overflow: hidden;
 }
 
@@ -122,66 +109,14 @@ input[type=submit] {
 
 /* CONTENT STYLE */
 
-#content {
-    height: 100%;
-    padding:0 0 0 0px;
+.section{
+  text-align: center;
+  background-size: cover;
 }
 
-
-#content .bg{
-
-    background-image: url("../images/bg.jpg");
-
-    /* full height */
-    height: 100%;
-
-    /* center and scale the image */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#section0{
+  background-image: url(../images/hood.jpg);
 }
 
-#content .home_text{
-
-    /* put the text in the center of the page */
-    height: 100%;
-    width: 100%;
-
-}
-
-#content .home_text{
-
-    height: 100%;
-
-    /* put the text in the center of the container */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    /* style the text */
-    color: white;
-}
-
-#content .myname{
-    font-size: 40px;
-}
-
-#socrates{
-    text-align: right;
- }
-
-#content .intro{
-    height: 100%;
-
-    /* put the text in the center of the container */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#content .intro_0{
-    width: 50%;
-}
 
 
