@@ -1,4 +1,10 @@
 {% extends "blog/base.html" %}
+{% load static %}
+
+
+{% block style %}
+  <link href="{% static "css/blog.css" %}" rel="stylesheet">
+{% endblock %}
 
 {% block title %}My Blog{% endblock %}
 

@@ -5,6 +5,9 @@ from django.core.paginator import Paginator, EmptyPage,\
 from django.views.generic import ListView
 from taggit.models import Tag
 
+def home(request):
+  return render(request, 'blog/home.html')
+
 def post_list(request, tag_slug = None):
     object_list = Post.published.all()
     tag = None
